@@ -242,7 +242,8 @@ h3 {
   padding: 0.5em;
 }
 
-.repo-link {
+.repo-link,
+.profile-link {
   text-decoration: none;
   color: var(--secondary-color);
   font-weight: bolder;

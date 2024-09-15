@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIAIC Resumaker</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/58e70a41d9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-items">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="app-logo">
+                <a href="#home">
+                    <img class="logo-img" src="./assets/logo.png" type="image/png" alt="logo" />
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#static">Static</a></li>
+                    <li><a href="#dynamic">Dynamic</a></li>
+                    <li><a href="#editable">Editable</a></li>
+                    <li><a href="#shareable">Shareable</a></li>
+                </ul>
+            </nav>
+            <div class="app-header-account">
+                <a class="account-button" type="button" href=""><i class="fa-regular fa-user"></i></a>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="text-box">
+                <h1>GIAIC Resumaker</h1>
+                <h2>Your skills are the key. Unlock your career potential with a standout resume.</h2>
+                <p>
+                    Easily create a professional resume by entering your details step by step. Just input your
+                    information, and our tool will generate a polished resume for you in
+                    seconds. Simple, fast, and free to use!
+                </p>
+                <!-- button to navigate directly to create shareable resume -->
+                <a class="create-resume-button" href="#shareable" type="button">Create Resume</a>
+            </div>
+            <div class="image-box">
+                <img src="./assets/home-page-image.png" alt="home page image">
+            </div>
+        </section>
+
+        <section id="static">
+            <h1 class="section-title">Static</h1>
+            <p class="objective">
+                <strong>Objective:</strong> Build a static resume using HTML, CSS, and TypeScript.
+            </p>
+            <div id="static-grid">
+                <div class="static-container personal-info">
+                    <h3>Personal Information: </h3>
+                    <h4>Full Name: </h4>
+                    <p>Muhammad Omer Moazzam</p>
+                    <h4>Email: </h4>
+                    <p>m.omermoazzam04@gmail.com</p>
+                    <h4>Date Of Birth:</h4>
+                    <p>December 4, 2005</p>
+                    <h4>Nationality:</h4>
+                    <p>Pakistani</p>
+                    <div class="user-image">
+                        <img class="avatar" id="my-avatar" src="./assets/t18754_removebg.png" alt="user image">
+                    </div>
+                </div>
+                <div class="static-container edu">
+                    <h3>Education: </h3>
+                    <h4>Matriculation</h4>
+                    <ul class="ul-items">
+                        <li>SSC</li>
+                        <li>Hamdard Public School</li>
+                        <li>2019 - 2021</li>
+                        <li>Grade: A+</li>
+                    </ul>
+                    <h4>Intermediate</h4>
+                    <ul class="ul-items">
+                        <li>HSC</li>
+                        <li>Govt. Dehli College</li>
+                        <li>2021 - 2023</li>
+                        <li>Grade: A</li>
+                    </ul>
+                    <h4>Undergraduate</h4>
+                    <ul class="ul-items">
+                        <li>BSSE</li>
+                        <li>SSUET</li>
+                        <li>2023 - 2027</li>
+                        <li>Grade: A+</li>
+                    </ul>
+                </div>
+                <div class="static-container skill">
+                    <h3>Skills: </h3>
+                    <h4>Soft Skills</h4>
+                    <ul class="ul-items">
+                        <li>Communication</li>
+                        <li>Creativity</li>
+                        <li>Flexibility</li>
+                        <li>Project Management</li>
+                        <li>Problem-solving</li>
+                        <li>Leadership</li>
+                    </ul>
+                    <h4>Technical Skills</h4>
+                    <ul class="ul-items">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Android</li>
+                    </ul>
+                </div>
+                <div class="static-container work-experience">
+                    <h3>Work Experience: </h3>
+                    <h4>Project Lead - SSUET 1<sup>st</sup> Semester Project (Billing Software)</h4>
+                    <ul class="ul-items">
+                        <li>Python Developer</li>
+                        <li>Hybrid</li>
+                        <li>Oct 2023 - Jan 2024</li>
+                        <li>
+                            <a class="repo-link"
+                                href="https://github.com/MuhammadOmerMoazzam/MedDoc-Android-Application"
+                                target="_blank">GitHub</a>
+                        </li>
+                    </ul>
+                    <h4>Project Lead - SSUET 2<sup>nd</sup> Semester Project (Medical App)</h4>
+                    <ul class="ul-items">
+                        <li>Android Developer, Java</li>
+                        <li>Hybrid</li>
+                        <li>Mar 2024 - Jul 2024</li>
+                        <li>
+                            <a class="repo-link"
+                                href="https://github.com/MuhammadOmerMoazzam/MedDoc-Android-Application"
+                                target="_blank">GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="dynamic">
+            <h1 class="section-title">Dynamic</h1>
+            <p class="objective">
+                <strong>Objective:</strong> Convert the static resume into a Dynamic Resume Builder where users can fill
+                out a form, and the resume is generated based on their input.
+            </p>
+            <div class="boxes">
+                <div class="box-1">
+                    <div class="left-side">
+                        <div class="personal-information-container">
+                            <h4>Personal Information</h4>
+                            <table class="form-items">
+                                <tr>
+                                    <td><label for="dynamic-fullname">Full Name<span>*</span> </label></td>
+                                    <td><input type="text" id="dynamic-fullname" placeholder="John Doe" required
+                                            autocomplete="on" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="dynamic-occupation">Occupation<span>*</span> </label></td>
+                                    <td><input type="text" id="dynamic-occupation" placeholder="Software Engineer"
+                                            required autocomplete="on" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="dynamic-image-input">Image<span>*</span> </label></td>
+                                    <td><input type="file" accept="image/*" id="dynamic-image-input" required /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="contact-details-container">
+                            <h4>Contact Details</h4>
+                            <table class="form-items">
+                                <tr>
+                                    <td><label for="dynamic-email">Email<span>*</span> </label></td>
+                                    <td><input type="email" id="dynamic-email" placeholder="johndoe@gmail.com" required
+                                            autocomplete="on" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="dynamic-phone-number">Phone Number<span>*</span> </label></td>
+                                    <td><input type="tel" id="dynamic-phone-number" placeholder="123456789" required
+                                            autocomplete="on" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="dynamic-address">Address<span>*</span> </label></td>
+                                    <td><input type="text" id="dynamic-address" placeholder="Pakistan, Karachi 55421"
+                                            required autocomplete="on" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="dynamic-linkedin">LinkedIn </label></td>
+                                    <td><input type="url" id="dynamic-linkedin" placeholder="Enter LinkedIn URL"
+                                            autocomplete="on" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="summary">
+                            <h4>Summary</h4>
+                            <div class="summary-container">
+                                <p><strong>About Yourself</strong><span>*</span></p>
+                                <textarea id="dynamic-summary"
+                                    placeholder="Experienced Software Engineer with 5+ years of experience in agile software development..."
+                                    required rows="5">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="education">
+                            <h4>Education</h4>
+                            <div id="dynamic-education-container"></div>
+                            <button type="button" class="dynamic-add-education">Add Education <i
+                                    class="fa-solid fa-graduation-cap"></i></button>
+                        </div>
+
+                        <div class="skills">
+                            <h4>Skills</h4>
+                            <div id="dynamic-skill-container"></div>
+                            <button type="button" class="dynamic-add-skills">Add Skill <i
+                                    class="fa-solid fa-list-check"></i></button>
+                        </div>
+
+                        <div class="experience">
+                            <h4>Work Experience</h4>
+                            <div id="dynamic-experience-container"></div>
+                            <button type="button" class="dynamic-add-experience">Add Experience <i
+                                    class="fa-solid fa-briefcase"></i></button>
+                        </div>
+
+                        <!-- generate-resume part -->
+                        <div class="generate-button-container">
+                            <button type="button" class="generate-resume-button" id="generate-dynamic">Generate
+                                Resume <i class="fa-solid fa-rotate-left"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="dynamic-box-2 box-2"></div>
+            </div>
+        </section>
+        <section id="editable">
+            <h1 class="section-title">Editable</h1>
+            <p class="objective">
+                <strong>Objective:</strong> Make the generated resume editable after it's created.
+            </p>
+            <div class="boxes">
+                <div class="box-1">
+                    <div class="left-side">
+                        <div class="personal-information-container">
+                            <h4>Personal Information</h4>
+                            <table class="form-items">
+                                <tr>
+                                    <td><label for="editable-fullname">Full Name<span>*</span> </label></td>
+                                    <td><input type="text" id="editable-fullname" placeholder="John Doe" required
+                                            autocomplete="on" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="editable-occupation">Occupation<span>*</span> </label></td>
+                                    <td><input type="text" id="editable-occupation" placeholder="Software Engineer"
+                                            required autocomplete="on" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="editable-image-input">Image<span>*</span> </label></td>
+                                    <td><input type="file" accept="image/*" id="editable-image-input" required /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="contact-details-container">
+                            <h4>Contact Details</h4>
+                            <table class="form-items">
+                                <tr>
+                                    <td><label for="editable-email">Email<span>*</span> </label></td>
+                                    <td><input type="email" id="editable-email" placeholder="johndoe@gmail.com" required
+                                            autocomplete="on" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="editable-phone-number">Phone Number<span>*</span> </label></td>
+                                    <td><input type="tel" id="editable-phone-number" placeholder="123456789" required
+                                            autocomplete="on" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="editable-address">Address<span>*</span> </label></td>
+                                    <td><input type="text" id="editable-address" placeholder="Pakistan, Karachi 55421"
+                                            required autocomplete="on" /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="editable-linkedin">LinkedIn </label></td>
+                                    <td><input type="url" id="editable-linkedin" placeholder="Enter LinkedIn URL"
+                                            autocomplete="on" /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="summary">
+                            <h4>Summary</h4>
+                            <div class="summary-container">
+                                <p><strong>About Yourself</strong><span>*</span></p>
+                                <textarea id="editable-summary"
+                                    placeholder="Experienced Software Engineer with 5+ years of experience in agile software development..."
+                                    required rows="5">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="education">
+                            <h4>Education</h4>
+                            <div id="editable-education-container"></div>
+                            <button type="button" class="editable-add-education">Add Education <i
+                                    class="fa-solid fa-graduation-cap"></i></button>
+                        </div>
+
+                        <div class="skills">
+                            <h4>Skills</h4>
+                            <div id="editable-skill-container"></div>
+                            <button type="button" class="editable-add-skills">Add Skill <i
+                                    class="fa-solid fa-list-check"></i></button>
+                        </div>
+
+                        <div class="experience">
+                            <h4>Work Experience</h4>
+                            <div id="editable-experience-container"></div>
+                            <button type="button" class="editable-add-experience">Add Experience <i
+                                    class="fa-solid fa-briefcase"></i></button>
+                        </div>
+
+                        <div class="generate-button-container">
+                            <button type="button" class="generate-resume-button" id="generate-editable">Generate
+                                Resume <i class="fa-solid fa-rotate-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="editable-box-2 box-2"></div>
+            </div>
+        </section>
+        <section id="shareable">
+            <h1 class="section-title">Shareable</h1>
+            <p class="objective">
+                <strong>Objective:</strong> Generate a unique URL for each resume based on the user's username, and
+                allow the resume to be shared and downloaded.
+            </p>
+            <div class="boxes">
+                <div class="box-1">
+                    <div class="left-side">
+                        <div class="personal-information-container">
+                            <h4>Personal Information</h4>
+                            <table class="form-items">
+                                <tr>
+                                    <td><label for="shareable-fullname">Full Name<span>*</span> </label></td>
+                                    <td><input type="text" id="shareable-fullname" placeholder="John Doe" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="shareable-occupation">Occupation<span>*</span> </label></td>
+                                    <td><input type="text" id="shareable-occupation" placeholder="Software Engineer"
+                                            required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="shareable-image-input">Image<span>*</span> </label></td>
+                                    <td><input type="file" accept="image/*" id="shareable-image-input" required /></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="contact-details-container">
+                            <h4>Contact Details</h4>
+                            <table class="form-items">
+                                <tr>
+                                    <td><label for="shareable-email">Email<span>*</span> </label></td>
+                                    <td><input type="email" id="shareable-email" placeholder="johndoe@gmail.com"
+                                            required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="shareable-phone-number">Phone Number<span>*</span> </label></td>
+                                    <td><input type="tel" id="shareable-phone-number" placeholder="123456789"
+                                            required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="shareable-address">Address<span>*</span> </label></td>
+                                    <td><input type="text" id="shareable-address" placeholder="Pakistan, Karachi 55421"
+                                            required /></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="shareable-linkedin">LinkedIn </label></td>
+                                    <td><input type="url" id="shareable-linkedin" placeholder="Enter LinkedIn URL" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="summary">
+                            <h4>Summary</h4>
+                            <div class="summary-container">
+                                <p><strong>About Yourself</strong><span>*</span></p>
+                                <textarea id="shareable-summary"
+                                    placeholder="Experienced Software Engineer with 5+ years of experience in agile software development..."
+                                    required rows="5">
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="education">
+                            <h4>Education</h4>
+                            <div id="shareable-education-container"></div>
+                            <button type="button" class="shareable-add-education">Add Education <i
+                                    class="fa-solid fa-graduation-cap"></i></button>
+                        </div>
+
+                        <div class="skills">
+                            <h4>Skills</h4>
+                            <div id="shareable-skill-container"></div>
+                            <button type="button" class="shareable-add-skills">Add Skill <i
+                                    class="fa-solid fa-list-check"></i></button>
+                        </div>
+
+                        <div class="experience">
+                            <h4>Work Experience</h4>
+                            <div id="shareable-experience-container"></div>
+                            <button type="button" class="shareable-add-experience">Add Experience <i
+                                    class="fa-solid fa-briefcase"></i></button>
+                        </div>
+
+                        <div class="generate-button-container">
+                            <button type="button" class="generate-resume-button" id="generate-shareable">Generate
+                                Resume <i class="fa-solid fa-rotate-left"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div id="generated-shareable-container">
+                    <div class="shareable-box-2 box-2" id="download-and-share"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2024
+            <a href="https://github.com/MuhammadOmerMoazzam" title="Stakeholder" target="_blank">Muhammad Omer
+                Moazzam</a> All rights reserved.
+        </p>
+        <!--  will use these in profile logo temporarily
+        <div class="social-icons"></div>
+            <a href="https://github.com/MuhammadOmerMoazzam" target="_blank"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-omer-moazzam-6ab6b7297" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="mailto:m.omermoazzam04@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div> -->
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

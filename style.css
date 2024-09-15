@@ -1,0 +1,769 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+/* variables */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header and nav menu */
+header {
+  padding: 0.5em;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5%;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: white;
+  display: block;
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.app-header-account a i {
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 8px 10px;
+  color: white;
+}
+
+.logo-img {
+  width: 5em;
+  font-size: 20px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin: 0.5em 0.3em;
+  font-size: 3em;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  word-spacing: 4px;
+  background: linear-gradient(to left, rgb(38, 203, 5), rgb(6, 6, 217));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  margin: 0 0.5em;
+  letter-spacing: 0.5px;
+  font-size: 1.5em;
+}
+
+/* social-icons */
+.social-icons {
+  position: relative;
+  bottom: 0;
+  font-size: 1.5em;
+  margin: 1.5em 0.6em 0.5em;
+}
+
+.social-icons a {
+  margin-right: 0.5em;
+  color: var(--primary-color);
+}
+
+.social-icons a:hover {
+  color: rgb(18, 90, 233);
+  transition: 0.3s ease-in;
+}
+
+/* sections */
+main {
+  padding-top: 3.2em;
+}
+
+section {
+  padding: 2em 5%;
+  min-height: 100vh;
+}
+
+/* (section1) home */
+#home {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  background-image: linear-gradient(20deg, #ffffff 40%, #5899e2 74%);
+  padding-top: 5em;
+}
+
+.text-box {
+  width: 60%;
+  max-width: 600px;
+}
+
+.text-box p {
+  margin: 2em 0.5em;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 0.5em;
+}
+
+.objective {
+  padding: 0.5em;
+}
+
+.image-box {
+  width: 40%;
+  max-width: 500px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+}
+
+.create-resume-button {
+  text-decoration: none;
+  border: 2px solid rgb(52, 52, 193);
+  border-radius: 15px;
+  padding: 0.5em;
+  background-color: rgb(52, 52, 193);
+  color: white;
+  margin: 1em;
+  font-weight: 500;
+  transition: 0.5s ease-out;
+  box-shadow: 2px 2px 10px black;
+}
+
+.create-resume-button:hover {
+  color: rgb(52, 52, 193);
+  background-color: white;
+}
+
+/* (section2) static resume */
+#static {
+  background-color: white;
+  background-image: linear-gradient(
+    360deg,
+    #faa499,
+    #e0e5e5,
+    #6b2d5c 70%,
+    #ffffff
+  );
+}
+
+/* grid containing conatainers in static section */
+#static-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5em;
+  width: 100%;
+  padding: 0 0.1em;
+}
+
+/* static-container */
+.static-container {
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #0608d6;
+  margin: 0.5em auto;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.static-container:hover {
+  background-image: linear-gradient(25deg, #ffffff 10%, #5899e2 74%);
+  box-shadow: 1px 1px 20px #0608d6;
+}
+
+.static-container h4 {
+  padding: 0.5em 0.5em 0;
+  font-size: 0.9em;
+}
+
+.static-container p,
+.static-container ul {
+  font-size: 0.9em;
+  padding: 0 0.5em 0.5em;
+  overflow-x: hidden;
+}
+
+.ul-items {
+  list-style-type: square;
+  padding: 0.2em 5em;
+}
+
+.user-image {
+  border: 2px solid black;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  margin: 0.5em auto;
+  display: block;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.avatar {
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.2em;
+  background-color: lightslategrey;
+  border-radius: 15px 15px 0 0;
+  padding: 0.5em;
+}
+
+.repo-link {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bolder;
+}
+
+.ul-items {
+  line-height: 1.5;
+}
+
+/* (section3) dynamic */
+#dynamic {
+  background-color: #faa499;
+  background-image: linear-gradient(
+    180deg,
+    #faa499 0%,
+    #f7dd85 35%,
+    #ffc55c 100%
+  );
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-1 > div > div > h4 {
+  background-color: lightslategrey;
+  font-size: 1em;
+  padding: 0.5em;
+}
+
+.box-1,
+.box-2 {
+  width: 100%;
+  margin: 1em auto;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-2 {
+  max-width: 50%;
+  border: 2px solid;
+  background-color: white;
+}
+
+.box-2 p {
+  padding: 0.1em 0.5em;
+}
+
+.box-2 h3 {
+  border-radius: 0px;
+}
+
+.box-2 li {
+  padding-left: 0.5em;
+}
+
+.resume-header {
+  text-align: center;
+  margin: 0.5em;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  border: 2px solid;
+  margin: 0.5em;
+  background-color: aliceblue;
+}
+
+.box-2 h1 {
+  font-size: 2.5em;
+}
+
+button {
+  display: block;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  font-size: 1em;
+  background-image: linear-gradient(
+    to left,
+    rgb(48, 220, 14),
+    rgb(52, 52, 199)
+  );
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 2px black;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: white;
+  word-spacing: 1px;
+}
+
+button:hover {
+  box-shadow: 1px 1px 5px blue;
+}
+
+.generate-resume-button {
+  background-image: linear-gradient(
+    to left,
+    rgb(220, 117, 14),
+    rgb(190, 5, 104)
+  );
+  text-shadow: 2px 2px 10px;
+}
+
+/* selecting every <input> element whose class attribute value ends with "-input" */
+input[class$="-input"],
+input[class$="-date"] {
+  margin: 0.5em;
+}
+
+div[class$="-skill-entry"] {
+  display: flex;
+  gap: 1em;
+  padding-right: 1em;
+}
+
+.education-entry {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.remove-btn {
+  align-self: flex-end;
+  background: rgb(239, 72, 72);
+  color: black;
+}
+
+.generate-button-container {
+  background-color: black;
+  padding: 0.5em;
+}
+
+/* textarea and input */
+textarea {
+  border-radius: 10px;
+  border: 2px solid;
+  margin: 0 auto;
+  padding: 0.5em;
+  min-width: 100%;
+  font-size: 1em;
+}
+
+.summary-container {
+  padding: 1em;
+  margin: 0.1em 2em;
+}
+
+input[type] {
+  font-size: 1em;
+  font-weight: 500;
+  width: 100%;
+  padding: 0.5em;
+}
+
+td {
+  width: 50%;
+  padding: 0.1em 0.5em;
+}
+
+table {
+  margin: 0.5em;
+}
+
+span {
+  color: red;
+  font-size: 1.5em;
+}
+
+/* (section4) editable */
+#editable {
+  background-color: #0cbaba;
+  background-image: linear-gradient(
+    180deg,
+    #ffc55c 0%,
+    #83cccc 35%,
+    #34cd2c 100%
+  );
+}
+
+/* (section4) shareable */
+#shareable {
+  background-color: #1bc3c3;
+  background-image: linear-gradient(
+    180deg,
+    #34cd2c 0%,
+    #d2c620 35%,
+    #4d28f3ca 90%,
+    #ffffff 100%
+  );
+}
+
+.shareable-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  background-color: black;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+#download-resume {
+  background: rgb(248, 227, 2);
+  color: black;
+  margin: 0.5em 1em;
+}
+
+#share-resume {
+  background: rgb(2, 68, 248);
+  margin: 0.5em 1em;
+}
+
+/* footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  padding: 0.5em;
+}
+
+footer a {
+  font-weight: bolder;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: var(--secondary-color);
+}
+
+/* hamburger menu */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+
+/* responsiveness*/
+@media screen and (max-width: 768px) {
+  /* header */
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  nav ul {
+    position: fixed;
+    left: -100%;
+    top: 50px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  nav ul.active {
+    left: 0;
+  }
+
+  nav ul li {
+    margin: 0.5em 0;
+  }
+
+  /* centering the app-logo div in between hamburger and app-header-account */
+  .app-logo {
+    margin: 0 auto;
+  }
+
+  /* home section */
+  #home {
+    flex-direction: column;
+  }
+
+  .text-box,
+  .image-box {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .image-box img {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .create-resume-button {
+    display: block;
+    width: fit-content;
+    margin: 0.5em auto;
+  }
+
+  /* static-grid, container, boxes and images*/
+  .static-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .static-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .box-1,
+  .box-2,
+  .left-side,
+  .right-side {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .box-1 {
+    flex-direction: column;
+    border: 2px solid;
+  }
+
+  .box-2,
+  .shareable-button-container {
+    max-width: 70%;
+  }
+
+  .left-side,
+  .right-side {
+    border: none;
+    margin: 0;
+  }
+
+  /* headings, paragraph, and other texts */
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  h4,
+  p,
+  .ul-items {
+    font-size: 1em;
+  }
+
+  footer p {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* want  table data 'td' to get upside down */
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  td {
+    width: 100%;
+  }
+
+  .box-2,
+  .shareable-button-container {
+    max-width: 90%;
+  }
+
+  .box-2 h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  #static-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    padding: 0 0.5em;
+    gap: 1em;
+    margin: 0 auto;
+  }
+
+  .static-container,
+  .boxes {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .ul-items {
+    padding: 0 0.5em;
+  }
+
+  h3 {
+    font-size: 0.8em;
+    padding: 0 auto;
+  }
+
+  h4,
+  p,
+  .ul-items,
+  label,
+  button,
+  input[type] {
+    font-size: 0.8em;
+  }
+
+  .user-image {
+    width: 7em;
+    height: 7em;
+  }
+
+  section {
+    padding: 2em 0;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  .create-resume-button {
+    font-size: 0.9em;
+  }
+
+  .social-icons {
+    font-size: 1.2em;
+  }
+
+  .text-box p {
+    padding: 0.2em;
+  }
+
+  .text-box {
+    margin-top: 1em;
+    padding: 0.1em 0.2em;
+  }
+
+  .logo-img {
+    font-size: 1em;
+  }
+
+  .app-header-account {
+    font-size: 0.5em;
+  }
+
+  .line {
+    height: 3px;
+    margin: 5px;
+  }
+
+  main,
+  #home {
+    padding-top: 2.7em;
+  }
+
+  nav ul {
+    margin-top: -0.5em;
+  }
+
+  button {
+    width: fit-content;
+    padding: 0.5em;
+  }
+
+  textarea {
+    max-width: 10%;
+  }
+
+  .summary-container {
+    margin: 0.1em 0;
+    padding: 0.5em;
+  }
+
+  .box-2 h1 {
+    font-size: 1.5em;
+  }
+
+  .shareable-button-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em 1em;
+  }
+
+  .shareable-button-container button {
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 0.5em;
+  }
+}

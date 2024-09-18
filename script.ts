@@ -280,34 +280,36 @@ const generateShareableResume = () => {
     generateResume("shareable");
 }
 
-function downloadAsPDF() {
+function downloadAsPDF(): void {
     const resumeContent = document.querySelector('.shareable-box-2') as HTMLElement;
     if (!resumeContent) return;
-    const style = `
-        <link rel="stylesheet" href="./style.css" />
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
 
-        <style>
-            h1 {-webkit-text-fill-color: black}
-            .resume-header {border-bottom: 2px solid}
-        </style>
-    `;
-
-    const printWindow = window.open('', '', 'height=600,width=800');
-    if (!printWindow) return;
-
-    printWindow.document.write(`<html><head><title>Resume</title>`);
-    printWindow.document.write(style);
-    printWindow.document.write('</head><body>');
-    printWindow.document.write(resumeContent.innerHTML);
-    printWindow.document.write('</body></html>');
-
-    printWindow.document.close();
-    printWindow.focus();
-
+    const iframeDocument = iframe.contentDocument || iframe.contentWindow?.document;
+    if (iframeDocument) {
+        iframeDocument.write(`
+            <html>
+            <head>
+                <link rel="stylesheet" href="./style.css" />
+                <style>
+                    h1 { -webkit-text-fill-color: black; }
+                    .resume-header { border-bottom: 2px solid; }
+                    body { font-family: Arial, sans-serif; }
+                </style>
+            </head>
+            <body>
+                ${resumeContent.innerHTML}
+            </body>
+            </html>
+        `);
+        iframeDocument.close();
+    }
+    iframe.contentWindow?.print();
     setTimeout(() => {
-        printWindow.print();
-        printWindow.close();
-    }, 250);
+        document.body.removeChild(iframe);
+    }, 5000);
 }
 
 function generateUniqueURL(username: string): string {
